@@ -169,21 +169,12 @@ def train_with_config(args, opts):
     print("INFO: Trainable parameter count:", model_params)
     print("Loading dataset...")
     trainloader_params = {
-<<<<<<< HEAD
         "batch_size": args.batch_size,
         "shuffle": True,
         "num_workers": 8,
         "pin_memory": True,
         "prefetch_factor": 4,
         "persistent_workers": True,
-=======
-          'batch_size': args.batch_size,
-          'shuffle': True,
-          'num_workers': 8, 
-          'pin_memory': True,
-          'prefetch_factor': 4,
-          'persistent_workers': True
->>>>>>> 68806d2 (make output)
     }
     testloader_params = {
         "batch_size": args.batch_size,
